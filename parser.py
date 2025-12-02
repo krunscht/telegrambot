@@ -1,4 +1,4 @@
-# parser.py
+'''# parser.py
 from bs4 import BeautifulSoup
 import requests
 
@@ -30,3 +30,6 @@ def simple_search():
     except requests.exceptions.RequestException as e:
         # Если любая ошибка сети (прокси, таймаут, нет сайта и т.д.)
         return f"Ошибка при запросе к сайту: {e}"
+'''
+def simple_search():
+    return "В разработке"
