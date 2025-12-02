@@ -9,19 +9,6 @@ def simple_search():
     all_text = soup.get_text()
 
     mydivs = soup.find_all("div", {"class": "time-city-time-value"})
-    #print(mydivs.get_text())
     for el in soup.find_all('div', attrs={'class': 'time-city-time-value'}):
         parsed_time = el.get_text()
         return parsed_time
-"""
-    if "" in all_text.lower():
-        print("Слово есть на странице")
-        lines = all_text.split("\n")
-
-        for line in lines:
-            if "" in line.lower():
-                print(f" {line.strip()}")
-    else:
-                print("Слово не упоминается на странице")
-"""
-#simple_search()
